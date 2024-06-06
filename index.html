@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <script>
+        let date = Date.now();
+        /* 2. Define your event. */
+        function newsletterSignup() {
+          gtag('event', 'newsletter_signup', {
+          'time': date,
+          });
+      }
+      </script>
     <header>
         <nav>
             <ul>
@@ -29,7 +38,7 @@
         <div class="hero-content">
             <h1>Маркетингові послуги<br>від професіоналів</h1>
             <p>Просувайте свій бізнес з нашими експертами в маркетингу</p>
-            <a href="#contact" class="btn">Зв'язатися</a>
+            <a href="#contact" class="btn" onlick="newsletterSignup()">Зв'язатися</a>
         </div>
     </section>
     <section id="services">
